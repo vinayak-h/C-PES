@@ -1,9 +1,9 @@
 #include <stdio.h>
- 
+
 void main()
 {
     int i, num, odd_sum = 0, even_sum = 0;
- 
+
     printf("Enter the value of num\n");
     scanf("%d", &num);
     for (i = 1; i <= num; i++)
@@ -13,6 +13,9 @@ void main()
         else
             odd_sum = odd_sum + i;
     }
+    int sum = (num * (num + 1)) / 2;
     printf("Sum of all odd numbers  = %d\n", odd_sum);
     printf("Sum of all even numbers = %d\n", even_sum);
+    printf("Sum of all the numbers till %d = %d", num, sum);
+    return 0; // Safe exit
 }
